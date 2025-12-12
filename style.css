@@ -1,0 +1,458 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0;
+
+}
+
+body{
+    background-color: var(--background)
+}
+
+
+
+:root {
+  --background: #FFF3E5;
+  --box: #C24728;
+  --scroll: #D17255;
+  --cta: #53443A;
+  --white: white;
+}
+/* ------- Navigation ------- */
+.topnav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+.topnav ul {
+  display: flex;
+  align-items: center;
+  gap: clamp(0.5rem, 1.5vw, 0.9rem);
+  margin-left: auto;
+    list-style-type: none;
+    text-decoration: none;
+}
+  .topnav {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem;
+  }
+
+  /* Burger helt til venstre */
+
+
+  /* Logo i midten */
+  .logo {
+    margin: 0 auto;
+    max-width: 120px;
+  }
+  .logo img{
+   width: clamp(6rem, 18vw, 10rem);
+    max-width: 100%;
+    }
+    .navimg img{
+  width: clamp(3rem, 5vw, 2rem);
+  
+}
+
+
+  /* Stadig skjul tekst-links */
+  .link-text {
+    display: none;
+  }
+  .menu-knap {
+    margin-right: 1em;
+      margin-right: 1em;
+
+  background: var(--cta);
+  padding: clamp(0.8rem, 2.5vw, 1.2rem);
+  border: none;
+  border-radius: .4em;
+
+  font-size: clamp(3rem, 4vw, 2rem);
+  line-height: 1;
+
+  color: var(--white);
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+
+#menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+
+  width: 100%;
+  background: var(--white);
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+
+  padding-block: 0.5rem;
+  padding-left: 2em 2em;  
+  display: none;
+  z-index: 1000;
+}
+
+#menu.open {
+  display: grid;
+}
+#menu a{
+  text-decoration: none;
+  color: #000;
+
+  padding: clamp(1rem, 2vw, 1.2rem) 1.5rem;
+  border-radius: 0;
+
+  font-size: clamp(2rem, 5vw, 1.2rem);
+}
+
+#menu a:hover{
+  background: #eee;
+}
+h1{
+    font-family: "brandon-grotesque", sans-serif;
+font-weight: 400;
+font-style: normal;
+}
+h2, h3{
+    font-family: "fatfrank", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.knap-om-os{
+    font-family: "fatfrank", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p{
+font-family: "poppins", sans-serif;
+font-weight: 400;
+font-style: normal;
+}
+/* ------- Herosektion ------- */
+.hero-boks{
+    background-color: var(--box);
+    color: var(--white);
+    text-transform: uppercase;
+    text-align: center;
+    align-content: center;
+    font-size: 2em;
+    padding: 2em;
+}
+
+.hero-boks a{
+    display: inline-block;
+    font-size: 0.7em;
+    margin-top: 1em;
+    text-decoration: none;
+    color: var(--white);
+    background-color: var(--cta);
+    padding: 0.8em;
+    text-transform: uppercase;
+    border-radius: 30px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        font-family: "fatfrank", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.hero-banner img{
+    width: 100%;
+}
+
+/* ------- Kategorier ------- */
+.kategorier{
+    display: flex;
+    flex-direction: column;
+    margin: 4em;
+}
+
+.kategori-boks{
+    margin-bottom: 3em;
+    height: 600px;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border-radius: 30px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.kategori-boks h2{
+    background-color: var(--box);
+    color: var(--white);
+    font-size: 3.5em;
+    text-align: center;
+    margin-bottom: 10%;
+    padding: 1em;
+    text-transform: uppercase;
+}
+
+
+/* Billeder */
+.kategori-boks:nth-child(1){
+    background-image: url(img/haeklet.lys.jpg);
+    background-size: cover;
+}
+.kategori-boks:nth-child(2){
+    background-image: url(img/loeber.jpg);
+    background-size: cover;
+}
+.kategori-boks:nth-child(3){
+    background-image: url(img/CRAFTCLUB.jpg);
+    background-size: cover;
+}
+
+
+/* ------- Beskrivelse ------- */
+.beskrivelse{
+    color: var(--cta);
+    display: flex;
+    flex-direction: column;
+    margin: 5em;
+    gap: 3em;
+}
+
+.beskrivelse h3{
+    text-transform: uppercase;
+    color: var(--box);
+    font-size: 3.5em;
+    text-align: center;
+}
+
+.beskrivelse section{
+    flex: 1; /* Alle kolonner fylder lige meget */
+}
+
+.beskrivelse p{
+    margin: 1em 0;
+    font-size: 2em;
+}
+/* Knap - Om os */
+.knap-om-os{
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    color: var(--white);
+    background-color: var(--cta);
+    padding: 1em 0;
+    display: block;
+    border-radius: 40px;
+    margin: 0 1em;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* ------- Scroll bar ------- */
+
+.horisontal{
+    padding: 3em 0;
+    background-color: var(--scroll);
+    margin-bottom: 3em;
+}
+
+.scrollx{
+    overflow-x: scroll;  /*håndtere scroll på x aksen */
+    width: 100%;
+    display: flex;
+    gap: 2em; /*plads imellem image */
+      /* Skjul scrollbaren */
+    scrollbar-width: none;      
+    -ms-overflow-style: none;    /* Internet Explorer 10+ */
+}
+
+.scrollx h3{
+  position: absolute;
+  left: 0;
+  right: 0;             
+  background: rgba(0, 0, 0, 0.6);  
+  color: var(--white);
+
+  padding: 0.6em 1em;
+  text-align: center;
+    font-size: 4em;
+  margin: 0;
+}
+
+.scrollx a{
+    color: var(--white);
+    display: flex;
+    
+}
+.one-img{
+  position: relative;  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  width: 70vw;
+  border-radius: 20px;
+  overflow: hidden; 
+  background-image: url(img/haeklet.lys.jpg);
+  background-size: cover;
+    
+}
+.two-img{
+  position: relative;   
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  width: 70vw;
+  border-radius: 20px;
+  overflow: hidden; 
+  background-image: url(img/haeklet.lys.jpg);
+  background-size: cover;
+
+}
+.three-img{
+  position: relative;   
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  width: 70vw;
+  border-radius: 20px;
+  overflow: hidden; 
+  background-image: url(img/haeklet.lys.jpg);
+  background-size: cover;
+}
+.four-img{
+  position: relative;   
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  width: 70vw;
+  border-radius: 20px;
+  overflow: hidden; 
+  background-image: url(img/haeklet.lys.jpg);
+  background-size: cover;
+  height: 50vh;  
+} 
+/* ------- Studierabet ------- */
+.rabat{
+    background-color: var(--box);
+    color: var(--white);
+    padding: 2rem;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* ------- Månedens udvalgte ------- */
+h4{
+    color: var(--cta);
+    font-family: "fatfrank", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    padding: 1em 0;
+    font-size: 60px;
+}
+
+.udvalg-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+    margin: 4em;
+}
+
+.udvalg-container img{
+    width: 100%;
+    border-radius: 30px;
+    display: block;
+}
+
+/* ------- Footer ------- */
+
+footer {
+    background: #C24728;
+    color: white;
+    padding: 2em 1.2em;
+}
+
+
+/* ------- Nyhedsbrev ------- */
+.nyhedsbrev p {
+    font-size: 1rem;
+    margin-bottom:0.3em;
+}
+
+.nyhedsbrev form {
+    display: flex;
+    gap: 0.5em;
+}
+
+.nyhedsbrev input {
+    flex: 1;
+    padding: 0.8em;
+    border-radius: 30px;
+    border: none;
+}
+
+.nyhedbrev button {
+    padding: o.4em 0.3em;
+    border-radius: 50%;
+    border: none;
+    background: #53443A;
+    color: white ;
+    font-size: 1.2rem;
+}
+
+/* ------- Sociale medier ------- */
+.social {
+    margin-top: 2em;
+    text-align: center;
+}
+
+.ikoner {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin-top: 0.5em;
+}
+
+.ikoner img {
+    width: 30px;
+}
+
+/* Kontakt */
+.kontakt {
+    margin-top: 2em;
+}
+
+/* Åbningstider */
+.Tider { 
+    margin-top: 1.5em;  
+}
+
+.Tider h3 {
+    margin-bottom: 0.5em;
+}
+
+ /*Bundlinje*/
+ .bottum {
+    margin-top: 2em;
+    padding-top: 1em;
+    border-top: 1px solid brown;
+    font-size: 0.8rem;
+ }
+ 
+
