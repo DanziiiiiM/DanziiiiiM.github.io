@@ -33,7 +33,7 @@
                 <li  class="link-text"><a href="#">Garn</a></li>
                 <li  class="link-text"><a href="#">Workshops</a></li>
                 <li  class="link-text"><a href="#">Craft Club</a></li>
-                <li  class="link-text"><a href="#">Om os</a></li>
+                <li  class="link-text link-text-end"><a href="#">Om os</a></li>
  
                 <li class="navimg">
                     <a href="#">
@@ -47,7 +47,7 @@
                     </a>
                 </li>
                 
-                <li class="navimg">
+                <li class="navimg link-text-end">
                     <a href="#">
                          <img src="img/indkøbskurv-kopi.png" alt="">
                         </a>
@@ -67,7 +67,7 @@
         
      <section class="hero-boks">
         <h1>Et farverigt fællesskab for alle</h1>
-        <a href="#">Gå til craft club</a>
+        <a class="hero-knap" href="#">Gå til craft club</a>
      </section>
 
     <img src="img/CRAFTCLUB.jpg" alt="">
@@ -75,62 +75,76 @@
         
     <!-- Kategorier -->
     <section class="kategorier">
-        <div class="kategori-boks">
+        <a href="#" class="kategori-boks">
+                    <div>
             <h2>Produkter</h2>
         </div>
-        <div class="kategori-boks">
+        </a>
+        <a href="#" class="kategori-boks">
+                    <div >
             <h2>Events</h2>
         </div>
-        <div class="kategori-boks">
+        </a>
+        <a href="#" class="kategori-boks">
+                    <div >
             <h2>Workshops</h2>
         </div>
+        </a>
+
+
+
 
      </section>
     
     <!-- Beskrivelse -->
+    <img class="sektion-bryder" src="img/GARN OG CRAFT (1080 x 500 px).png" alt="">
     <section class="beskrivelse">
-        <img src="img/GARN OG CRAFT (1080 x 500 px).png" alt="">
-       
-        <section>
-        <img src="" alt="">
+        
+        <section class="beskrivelse-undersektion">
+        <img src="img/garn.png" alt="garnnøgle">
         <h3>Kvalitetsgarn</h3>
         <p>Vi bestræber os altid efter at have et godt sortiment. Det gælder både indenfor garn og andre craft-materialer.</p>
         <p>Hos Garn & Craft forsøger vi altid at finde balancen mellem kvalitet og pris.</p>
         <p>Vi ved godt at det kan være dyrt at have en hobby, og derfor kan man altid få lov at låne materialer som strikkepinde, hæklenåle mm.</p>
         </section>
 
-        <section>
-        <img src="" alt="">
+        <section class="beskrivelse-undersektion">
+        <img src="img/hjert.png" alt="hænder med et hjerte i midten">
         <h3>Håndarbejde</h3>
         <p>Håndarbejde har en lang forhistorie, og har været en del af vores liv i flere generationer.</p>
         <p>Man behøver hverken at have tålmodighed, elller medfødt snilde. Alle kan lære håndarbejde, med den rigtige hjælp.</p>
         <a class="knap-om-os" href="#">Om os</a>
         </section>
 
-        <section>
-        <img src="" alt="">
-        <h3>Fællesskab</h3>
-        <p>Vi tror på fællesskabet. Sammen kan vi udfolde vores kreativitet, og hjælpe andre på vejen.</p>
-        <p>Derfor vil vi skabe gode rammer for fællesskabet, og det gør vi både online og fysisk i butikken i Kolding.</p>
-        <p>Vi tilbyder derfor et kreativt fællesskab, uanset hvem du er, hvor du er og hvilken erfaring du har.</p>
+        <section class="beskrivelse-undersektion">
+            
+                <img src="img/fællesskab.png" alt="gruppe af personer">
+                <h3>Fællesskab</h3>
+                <p>Vi tror på fællesskabet. Sammen kan vi udfolde vores kreativitet, og hjælpe andre på vejen.</p>
+                <p>Derfor vil vi skabe gode rammer for fællesskabet, og det gør vi både online og fysisk i butikken i Kolding.</p>
+                <p>Vi tilbyder derfor et kreativt fællesskab, uanset hvem du er, hvor du er og hvilken erfaring du har.</p>
+            
+
         </section>
 
-        <img src="img/GARN OG CRAFT (1080 x 500 px).png" alt="">
     </section>
+    <img class="sektion-bryder" src="img/GARN OG CRAFT (1080 x 500 px).png" alt="">
     
     <!-- Scroll bar -->
     <div class="horisontal">
+ <div class="scroll-wrapper">
     <div class="scrollx">
         
-        <a href=""><div class="one-img"><h3>Garn</h3></div></a>
-        <a href=""><div class="two-img"><h3>Garn</h3></div></a>
-        <a href=""><div class="three-img"><h3>Garn</h3></div></a>
-        <a href=""><div class="four-img"><h3>Garn</h3></div></a>
+        <a href=""><div class="one-img size"><h3>GARN</h3></div></a>
+        <a href=""><div class="two-img size"><h3>OPSKRIFTER</h3></div></a>
+        <a href=""><div class="three-img size"><h3>KITS</h3></div></a>
+        <a href=""><div class="four-img size"><h3>TILBEHØR</h3></div></a>
 
- 
-
-
-
+    </div>
+    </div>
+    <div class="scroll-controls">
+    <button class="scroll-btn left" aria-label="Scroll venstre">←</button>
+    <button class="scroll-btn right" aria-label="Scroll højre">→</button>
     </div>
     </div>
     
@@ -144,18 +158,25 @@
     <section class="udvalg-container">
         
         <li>
-            <img src="img/loeber.jpg" alt="produktbillede">
+            <img class="hover" src="img/loeber.jpg" alt="produktbillede">
         </li>
 
         <li>
-            <img src="img/loeber.jpg" alt="produktbillede">
+            <img class="hover" src="img/loeber.jpg" alt="produktbillede">
         </li>
         
         <li>
-            <img src="img/loeber.jpg" alt="produktbillede">
+            <img class="hover" src="img/loeber.jpg" alt="produktbillede">
         </li>
         
         <li>
+            <img class="hover" src="img/loeber.jpg" alt="produktbillede">
+        </li>
+        <li class="desk hover">
+            <img src="img/loeber.jpg" alt="produktbillede">
+        </li>
+        
+        <li class="desk hover">
             <img src="img/loeber.jpg" alt="produktbillede">
         </li>
        
@@ -167,21 +188,23 @@
     <!-- Footer -->
     <footer>
         <!-- Nyhedsbrev -->
+        
         <div class="nyhedsbrev">
             <p>Tilmeld dig vores nyhedsbrev og modtag eksklusive tilbud</p>
             <form>
-                <input type="email" placeholder="Indtast din e-mail">
-                <button></button>
+                <input type="email" placeholder="Indtast din e-mail" required>
+                <button>Submit</button>
             </form>
         </div>
          <!-- Sociale medier -->
           <div class="social">
-            <p>Sociale Medier</p>
             <div class="ikoner">
                 <img src="img/fb.png" alt="">
                 <img src="img/insta.png" alt="">
-                <img src="img/pin.png" alt="">
+                <img src="img/tiktok.png" alt="">
             </div>
+            <p>Sociale Medier</p>
+
           </div>
           
         <!-- Kontakt info -->
@@ -208,12 +231,13 @@
          </div>
 
          <!-- Bundlinje -->
-    <div class="bottum">
+ 
+    </footer>
+       <div class="bottum">
         <p>CVR-nummer: 43420178</p>
         <p>Bankoplysninger: 7040 0002249612</p>
         <p>2025 Garn & Craft.</p>
     </div>
-    </footer>
 
 
     
