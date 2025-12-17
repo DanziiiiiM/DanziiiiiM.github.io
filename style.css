@@ -3,7 +3,6 @@
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 0;
-  outline: 1px solid rgb(0, 0, 0);
 
 }
 html, body {
@@ -124,7 +123,7 @@ h1{
   font-weight: 400;
   font-style: normal;
 }
-h2, h3{
+h2, h3, h4, h5{
     font-family: "fatfrank", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -201,7 +200,7 @@ a{
   transition: 200ms ease-in;
 }
 
-.hero-knap:hover, .knap-om-os:hover{
+.hero-knap:hover, .knap-om-os:hover {
  transform: scale(1.1) rotate(5deg);
 }
 
@@ -425,14 +424,63 @@ h4{
     margin-top: 20px;
     margin: 4em;
     list-style: none;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+
 }
 
 .udvalg-container img{
     width: 100%;
-    border-radius: 30px;
+    border-radius: 30px 30px 0 0;
     display: block;
 }
+.udvalg-container li{
+  height: 520px;
+  background-color: var(--white);
+  border-radius: 30px 30px 0 0;
+
+}
+.udvalg-container h5{
+  color: var(--box);
+  font-size: 2em;
+}
+
+.kob-knap{
+  background-color: var(--cta);
+  color: white;
+  padding: 1em 1em;
+  border-radius: 30px;
+  font-family: "fatfrank", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  transition: 500ms ease in;
+}
+.kob-knap:hover{
+  transform: scale(1.1) rotate(5deg);
+}
+.bund-udvalg{
+  margin-top: 2.4em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+.pris{
+  font-family: "fatfrank", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.udvalg-container img {
+  width: 100%;
+  height: 380px;        /* justér efter Figma */
+  object-fit: cover;
+  display: block;
+}
+.udvalg-container li h5,
+.udvalg-container li .undertekst,
+.udvalg-container li .bund-udvalg  {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 
 /* ------- Footer ------- */
 
@@ -450,34 +498,67 @@ footer {
 }
 
 .nyhedsbrev form {
-    display: flex;
-    gap: 0.5em;
+  display: flex;
+  position: relative;
 }
 
 .nyhedsbrev input {
-    flex: 1;
-    padding: 0.8em;
-    border-radius: 30px;
-    border: none;
+  width: 30%;
+  padding: 0.8em 3em 0.8em 0.8em; /* plads til pilen */
+  border-radius: 10px;
+  border: none;
+  background-color: #972a0f;
+  
+}
+.nyhedsbrev input::placeholder{
+  color: white;
 }
 
 .nyhedsbrev button {
-    padding: o.4em 0.3em;
-    border-radius: 50%;
-    border: none;
-    background: #53443A;
-    color: white ;
-    font-size: 1.2rem;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
+  background: #ffffff;
+  color: #972a0f;
+  
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+
+  top: 50%;
+  left: 13.5em;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.nyhedsbrev .mail-knap p{
+  font-size: 1.8em;
+  margin: 0 auto;
+}
+.nyhedsbrev h3{
+  font-family: "poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+.mail-knap p {
+  font-size: 2rem;
 }
 /* ------- Sociale medier ------- */
 .social {
     margin-top: 2em;
-    text-align: center;
+    
 }
-
+.social p{
+      font-family: "poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
 .ikoner {
     display: flex;
-    justify-content: center;
+    align-items: center;
     gap: 1em;
     margin-top: 0.5em;
 }
@@ -499,7 +580,10 @@ footer {
 .Tider h3 {
     margin-bottom: 0.5em;
 }
-
+.kontakt img{
+ max-width: 5%;
+ padding-right: .6em;
+}
  /*Bundlinje*/
 .bottum {
   grid-column: 1 / -1;
@@ -524,6 +608,7 @@ footer {
   #menu, .menu-knap{
   display: none;
 }
+
 .link-text{
   display: flex;
 }
@@ -588,7 +673,7 @@ footer {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
     transition: 500ms ease-in;
 }
-.kategori-boks:hover, .hover:hover{
+.kategori-boks:hover{
   transform:scale(1.1);
 }
 .kategori-boks h2{
@@ -640,10 +725,155 @@ footer {
 
 .udvalg-container img{
     width: 100%;
-    border-radius: 30px;
+    border-radius: 30px 30px 0 0;
     display: block;
+    
+}
+.udvalg-container li{
+  height: 950px;
+  background-color: var(--white);
+  border-radius: 30px;
+
+}
+.udvalg-container h5{
+  color: var(--box);
+  font-size: 2em;
+  margin-top: .8em;
+}
+.kob-knap{
+  background-color: var(--cta);
+  color: white;
+  padding: .5em 1.2em;
+  border-radius: 30px;
+  font-family: "fatfrank", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5em;
+}
+.bund-udvalg{
+  margin-top: 4em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+.bund-udvalg p{
+  font-size: 2em;
+  color: var(--cta);
+}
+.undertekst{
+  font-size: 1.2em;
+}
+.pris{
+  font-family: "fatfrank", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.udvalg-container li img {
+  width: 100%;
+  height: 700px;        /* justér efter Figma */
+  object-fit: cover;
+  display: block;
+
+}
+.udvalg-container li h5,
+.udvalg-container li .undertekst,
+.udvalg-container li .bund-udvalg {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  padding: 4rem 6rem;
+
+}
+.footer-left,
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.footer-info {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 2rem;
+  max-width: 500px;
+  margin: 0 auto;
+}
+.footer-right h2 {
+  text-align: center;
+}
+.nyhedsbrev input {
+  width: 33%;
+  padding: 0.8em 3em 0.8em 0.8em; /* plads til pilen */
+  border-radius: 10px;
+  border: none;
+  background-color: #972a0f;
+  
+}
+.nyhedsbrev input::placeholder{
+  color: white;
+}
+
+.nyhedsbrev button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
+  background: #ffffff;
+  color: #972a0f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 17.5em;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.nyhedsbrev .mail-knap p{
+  font-size: 1.8em;
+  margin: 0 auto;
+}
+.nyhedsbrev {
+  margin-bottom: 1.5rem;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  justify-content: left;
+}
+
+.ikoner {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.ikoner img {
+    width: 30px;
+}
+
+/* Kontakt / tider */
+.kontakt,
+.Tider {
+  margin-top: 0.5rem;
+}
+.Tider h3 {
+    margin-bottom: 0.5em;
+}
+.kontakt img{
+ max-width: 10%;
+ padding-right: .6em;
+}
+.bottum{
+  padding: 1em 2em;
+}
 /* Footer */
  }
  @media (max-width: 768px) {
@@ -656,5 +886,8 @@ footer {
 body{
   width: 768px;
 }
-
+  .footer {
+    grid-template-columns: 1fr;
+    padding: 3rem 2rem;
+  }
 }
