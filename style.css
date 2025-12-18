@@ -267,12 +267,24 @@ a{
     margin: 1em 0;
     font-size: 2em;
 }
+.gem-tekst{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
 /*Sektion Bryder*/
 .sektion-bryder{
   display: block;
   margin: auto;
   width: 80%;
 }
+
 /* Knap - Om os */
 .knap-om-os{
     text-decoration: none;
@@ -543,8 +555,9 @@ footer {
   font-weight: 800;
   font-style: normal;
 }
-.mail-knap p {
-  font-size: 2rem;
+.mail-knap .arrow {
+  font-size: 1.5rem; /* JUSTER HER */
+  line-height: 1;
 }
 /* ------- Sociale medier ------- */
 .social {
@@ -570,6 +583,7 @@ footer {
 /* Kontakt */
 .kontakt {
     margin-top: 2em;
+
 }
 
 /* Åbningstider */
@@ -591,7 +605,7 @@ footer {
   padding: 2em 1em;
   border-top: 1px solid rgba(255,255,255,0.3);
   font-size: 0.8rem;
-  background: var(--scroll);
+  background: var(--cta);
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;

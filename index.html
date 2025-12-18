@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://use.typekit.net/nkj4qeo.css">
     <title>Forside</title>
 </head>
-
+<body>
 
 <header>
    <!-- Navigation -->
@@ -62,7 +62,6 @@
     </nav>
 </header>
 
-<body>
 
     <main>
     <!-- Hero sektion -->
@@ -100,9 +99,9 @@
      </section>
     
     <!-- Beskrivelse -->
-    <img class="sektion-bryder" src="img/GARN OG CRAFT (1080 x 500 px).png" alt="">
+    <img class="sektion-bryder" src="img/bryder.png" alt="">
     <section class="beskrivelse">
-        
+        <h2 class="gem-tekst">Om Garn og Craft</h2>
         <section class="beskrivelse-undersektion" tabindex="0"  >
         <img src="img/garn.png" alt="garnnøgle">
         <h3>Kvalitetsgarn</h3>
@@ -131,7 +130,7 @@
         </section>
 
     </section>
-    <img class="sektion-bryder" src="img/GARN OG CRAFT (1080 x 500 px).png" alt="">
+    <img class="sektion-bryder" src="img/bryder.png" alt="">
     
     <!-- Scroll bar -->
     <div class="horisontal">
@@ -155,15 +154,18 @@
     
     <!-- Studierabat banner -->
     <section class="rabat">
+        <h2 class="gem-tekst">Studierabat</h2>
+
         <p>Som studerende får du altid 10% studierabat i butikken ved fremvisning af gyldigt studiekort</p>
     </section>
         
     <!-- Månedens udvalgte ? -->
      <h4>Månedens udvalgte</h4>
-    <section class="udvalg-container">
-        
+    <section>
+        <ul class="udvalg-container">
+
         <li class="hover" tabindex="0" >
-            <img class="hover" src="img/grøn2.png" alt="Gå til garn">      
+            <img class="hover" src="img/grøn2.png" alt="opskrift på Grøn sweater">      
             <h5 class="produktet">Grøn sweater</h5>
             <p class="undertekst">Garnkit inkl. opskrift</p>
             <div class="bund-udvalg">
@@ -174,9 +176,9 @@
         </li>
 
         <li class="hover" tabindex="0" >
-            <img src="img/baBY.png" alt="Gå til opskifter"">
+            <img src="img/baBY.png" alt="Opskrift på Baby-tæppe">
            
-                <h5 class="produktet">Baby tæppe</h5>
+                <h5 class="produktet">Baby-tæppe</h5>
                 <p class="undertekst">Strikkeopskrift - PDF</p>
             <div class="bund-udvalg">
                 <p class="pris">39KR</p>
@@ -186,7 +188,7 @@
         </li>
         
         <li class="hover" tabindex="0">
-            <img src="img/ting.png" alt="Gå til kits"">
+            <img src="img/ting.png" alt="Opskrift på Edith Sweater">
 
 
            
@@ -200,7 +202,7 @@
         </li>
         
         <li class="hover" tabindex="0">
-        <img src="img/vest3.png" alt="Gå til tilbehør"">
+        <img src="img/vest3.png" alt="Opskrift på Vest med knapper">
 
 
            
@@ -213,7 +215,7 @@
 
         </li>
         <li class="hover desk " tabindex="0">
-            <img src="img/vest.webp" alt="produktbillede">
+            <img src="img/vest.webp" alt="Opskrift på Snevest">
                 <h5 class="produktet">Snevest</h5>
                 <p class="undertekst">Garnkit inkl. opskrift</p>
             <div class="bund-udvalg">
@@ -223,7 +225,7 @@
         </li>
         
         <li class="hover desk " tabindex="0">
-            <img src="img/et-phone-home.png" alt="produktbillede">
+            <img src="img/et-phone-home.png" alt="Opskrift på Oktoberhette">
                 <h5 class="produktet">Oktoberhette</h5>
                 <p class="undertekst">Garnkit inkl. PDF opskrift</p>
             <div class="bund-udvalg">
@@ -231,7 +233,7 @@
                 <button class="kob-knap">Læs mere</button>
             </div>
         </li>
-       
+       </ul>
 
     </section>
 
@@ -242,27 +244,27 @@
   
   <!-- Venstre kolonne -->
   <div class="footer-left">
-    <div class="nyhedsbrev" aria-labelledby="nyhedsbrev-header">
-      <h3 id="nyhedsbrev-header">BLIV EN DEL AF KLUBBEN!</h3>
-      <p>Tilmeld dig vores nyhedsbrev og modtag eksklusive tilbud</p>
-      <form aria-label="Tilmelding til nyhedsbrev">
-        <input type="email" placeholder="Indtast din e-mail" required aria-required="true">
-        <button class="mail-knap" type="submit" aria-label="Tilmeld nyhedsbrev">
-    <p>&#8594;</p>
-    </button>
-      </form>
-    </div>
+        <section class="nyhedsbrev" aria-labelledby="nyhedsbrev-header">
+        <h3 id="nyhedsbrev-header">BLIV EN DEL AF KLUBBEN!</h3>
+        <p>Tilmeld dig vores nyhedsbrev og modtag eksklusive tilbud</p>
+        <form aria-label="Tilmelding til nyhedsbrev">
+            <input type="email" placeholder="Indtast din e-mail" required>
+            <button class="mail-knap" type="submit" aria-label="Tilmeld nyhedsbrev">
+            <span class="arrow">&#8594;</span>
+            </button>
+        </form>
+        </section>
 
-    <div class="social" aria-labelledby="social-header">
-      <div class="ikoner">
-        <img src="img/fb.png" alt="Facebook-side">
-        <img src="img/insta.png" alt="Instagram-side">
-        <img src="img/tiktok.png" alt="Tiktok-side">
-      </div>
-      <p id="social-header">Sociale Medier</p>
+        <section class="social">
+        <h3 id="social-header">Sociale medier</h3>
+        <div class="ikoner">
+            <img src="img/fb.png" alt="Facebook-side">
+            <img src="img/insta.png" alt="Instagram-side">
+            <img src="img/tiktok.png" alt="Tiktok-side">
+        </div>
+        
+        </section>
     </div>
-  </div>
-
   <!-- Højre kolonne -->
   <div class="footer-right">
     <h2>GARN & CRAFT</h2>
@@ -272,11 +274,11 @@
       <p><strong>Besøg os</strong></p>
       <p>Låsbygade 42b</p>
       <p>6000 Kolding</p>
-      <p><img src="img/telefon.png"><a href="tel:+4512345678" aria-label="Ring til Garn & craft"></a>+45 12 34 56 78</p>
-      <p><img src="img/mail.png"><a href="mailto:info@garnogcraft.dk" aria-label="Send mail til Garn og Craft"></a>info@garnogcraft.dk</p>
+      <p><img src="img/telefon.png" alt=""><a href="tel:+4512345678" aria-label="Ring til Garn & craft"></a>+45 12 34 56 78</p>
+      <p><img src="img/mail.png" alt=""><a href="mailto:info@garnogcraft.dk" aria-label="Send mail til Garn og Craft"></a>info@garnogcraft.dk</p>
     </div>
 
-    <div class="Tider" aria-label="åbeningstider-header">
+    <section class="Tider">
       <h3 id="åbeningstider-header">Åbningstider</h3>
       <p>Man: 11.00–17.00</p>
       <p>Tirs: Lukket</p>
@@ -285,12 +287,12 @@
       <p>Fre: 11.00–17.00</p>
       <p>Lør: 11.00–14.00</p>
       <p>Søn: Lukket</p>
+
+</section>
     </div>
   </div>
-</div>
-
 </footer>
-       <div class="bottum" aria-label="Virksomhedsoplysninger">
+       <div class="bottum">
         <p>CVR-nummer: 43420178</p>
         <p>Bankoplysninger: 7040 0002249612</p>
         <p>2025 Garn & Craft.</p>
