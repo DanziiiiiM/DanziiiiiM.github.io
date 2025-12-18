@@ -738,8 +738,8 @@ footer {
 }
 
 .scroll-btn {
-  background-color: var(--cta);
-  color: var(--white);
+  background-color: var(--white);
+  color: var(--cta);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -751,7 +751,7 @@ footer {
   cursor: pointer;
 }
 .scroll-btn:hover {
-  background-color: var(--box);
+  background-color: var(--cta);
   color: var(--white);
 }
 .size {
@@ -762,8 +762,11 @@ footer {
   align-items: center;     /* lodret */
 }
 
-.rabat{
+.rabat h2{
   font-size: 3.75rem;
+}
+.rabat p {
+  font-size: 3.5rem;
 }
 .udvalg-container{
     display: grid;
