@@ -24,11 +24,14 @@ html {
   --cta: #53443A;
   --white: white;
 }
-/* ------- Navigation ------- */.topnav {
+/* ------- Navigation ------- */
+  .topnav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
+  background-color: var(--background);
+  color: var(--cta);
 }
 .skip-link {
   position: absolute;
@@ -41,7 +44,10 @@ html {
   text-decoration: none;
   border-radius: 8px;
 }
-
+.topnav a:hover {
+  background-color: var(--box);
+  color: var(--white);
+}
 .skip-link:focus {
   top: 1rem;
 }
@@ -181,7 +187,7 @@ font-style: normal;
     text-transform: uppercase;
     border-radius: 30px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-        font-family: "fatfrank", sans-serif;
+    font-family: "fatfrank", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
@@ -250,8 +256,8 @@ a{
 .beskrivelse{
     color: var(--cta);
     display: flex;
-      margin: 0;
-  padding: 5em;
+    margin: 0;
+    padding: 5em;
     gap: 3em;
    
 }
@@ -744,7 +750,10 @@ footer {
   font-size: 2rem;
   cursor: pointer;
 }
-
+.scroll-btn:hover {
+  background-color: var(--box);
+  color: var(--white);
+}
 .size {
 
   height: 90vh;
@@ -754,7 +763,7 @@ footer {
 }
 
 .rabat{
-  font-size: 3.5rem;
+  font-size: 3.75rem;
 }
 .udvalg-container{
     display: grid;
