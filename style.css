@@ -12,7 +12,9 @@ html, body {
 body{
     background-color: var(--background)
 }
-
+html {
+  font-size: 100%; /* svarer til 16px, men respekterer brugerens valg */
+}
 
 
 :root {
@@ -27,6 +29,21 @@ body{
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
+}
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 1rem;
+  background-color: var(--cta);
+  color: var(--white);
+  padding: 0.75rem 1rem;
+  z-index: 1000;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+.skip-link:focus {
+  top: 1rem;
 }
 .topnav ul {
   display: flex;
@@ -425,7 +442,7 @@ h4{
     font-style: normal;
     text-align: center;
     padding: 1em 0;
-    font-size: 60px;
+    font-size: 3.75rem;
 }
 
 .udvalg-container{
@@ -446,7 +463,7 @@ h4{
 .udvalg-container li{
   height: 540px;
   background-color: var(--white);
-
+  color: var(--cta)
 }
 .udvalg-container h5{
   color: var(--box);
@@ -501,7 +518,6 @@ footer {
     color: white;
     padding: 2em 1.2em;
 }
-
 
 /* ------- Nyhedsbrev ------- */
 .nyhedsbrev p {
@@ -716,6 +732,8 @@ footer {
 }
 
 .scroll-btn {
+  background-color: var(--cta);
+  color: var(--white);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -736,7 +754,7 @@ footer {
 }
 
 .rabat{
-  font-size: 64px;
+  font-size: 3.5rem;
 }
 .udvalg-container{
     display: grid;
@@ -756,8 +774,9 @@ footer {
     
 }
 .udvalg-container li{
-  height: 950px;
   background-color: var(--white);
+  color: var(--cta);
+  height: 950px;
   border-radius: 30px;
 
 }
