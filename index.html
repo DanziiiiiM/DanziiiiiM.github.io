@@ -17,9 +17,10 @@
     <nav class="topnav">
         
         <!-- Burgermenu -->
-            <button class="menu-knap" aria-expanded="false">☰</button>
+            <button class="menu-knap"   aria-expanded="false" aria-controls="menu" aria-label="Åbn menu">☰</button>
 
             <div id="menu">
+            <a class="mobil-links" href="">Forside</a>    
             <a class="mobil-links" href="">Garn</a>
             <a class="mobil-links" href="">Workshops</a>
             <a class="mobil-links" href="">Craft Club</a>
@@ -31,6 +32,7 @@
             </div>
         <div>
                      <ul> 
+                <li  class="link-text forside"><a href="#">Forside<hr></a></li>       
                 <li  class="link-text"><a href="#">Garn</a></li>
                 <li  class="link-text"><a href="#">Workshops</a></li>
                 <li  class="link-text"><a href="#">Craft Club</a></li>
@@ -68,25 +70,25 @@
         
      <section class="hero-boks">
         <h1>Et farverigt fællesskab for alle</h1>
-        <a class="hero-knap" href="#">Gå til craft club</a>
+        <a class="hero-knap" href="#" aria-label="Gå til Craft Club fællesskabet">Gå til craft club</a>
      </section>
 
-    <img src="img/fællesskab2.png" alt="">
+    <img src="img/fællesskab2.png" alt="Fælleskabet">
     </div>
         
     <!-- Kategorier -->
     <section class="kategorier">
-        <a href="#" class="kategori-boks">
+        <a href="#" class="kategori-boks" aria-label="Gå til produkter">
                     <div>
             <h2>Produkter</h2>
         </div>
         </a>
-        <a href="#" class="kategori-boks">
+        <a href="#" class="kategori-boks" aria-label="Gå til event">
                     <div >
             <h2>Events</h2>
         </div>
         </a>
-        <a href="#" class="kategori-boks">
+        <a href="#" class="kategori-boks" aria-label="Gå til workshop">
                     <div >
             <h2>Workshops</h2>
         </div>
@@ -101,7 +103,7 @@
     <img class="sektion-bryder" src="img/GARN OG CRAFT (1080 x 500 px).png" alt="">
     <section class="beskrivelse">
         
-        <section class="beskrivelse-undersektion">
+        <section class="beskrivelse-undersektion" tabindex="0"  >
         <img src="img/garn.png" alt="garnnøgle">
         <h3>Kvalitetsgarn</h3>
         <p>Vi bestræber os altid efter at have et godt sortiment. Det gælder både indenfor garn og andre craft-materialer.</p>
@@ -109,7 +111,7 @@
         <p>Vi ved godt at det kan være dyrt at have en hobby, og derfor kan man altid få lov at låne materialer som strikkepinde, hæklenåle mm.</p>
         </section>
 
-        <section class="beskrivelse-undersektion">
+        <section class="beskrivelse-undersektion" tabindex="0">
         <img src="img/hjert.png" alt="hænder med et hjerte i midten">
         <h3>Håndarbejde</h3>
         <p>Håndarbejde har en lang forhistorie, og har været en del af vores liv i flere generationer.</p>
@@ -117,7 +119,7 @@
         <a class="knap-om-os" href="#">Om os</a>
         </section>
 
-        <section class="beskrivelse-undersektion">
+        <section class="beskrivelse-undersektion" tabindex="0">
             
                 <img src="img/fællesskab.png" alt="gruppe af personer">
                 <h3>Fællesskab</h3>
@@ -160,33 +162,31 @@
      <h4>Månedens udvalgte</h4>
     <section class="udvalg-container">
         
-        <li>
-            <img class="hover" src="img/grøn2.png" alt="produktbillede">      
+        <li class="hover" tabindex="0" >
+            <img class="hover" src="img/grøn2.png" alt="Gå til garn">      
             <h5 class="produktet">Grøn sweater</h5>
             <p class="undertekst">Garnkit inkl. opskrift</p>
             <div class="bund-udvalg">
                 <p class="pris">899kr</p>
-                <button class="kob-knap">Køb nu</button>
+                <button class="kob-knap">Læs mere</button>
             </div>
 
         </li>
 
-        <li>
-            <img class="hover" src="img/baBY.png" alt="produktbillede">
-
-
+        <li class="hover" tabindex="0" >
+            <img src="img/baBY.png" alt="Gå til opskifter"">
            
                 <h5 class="produktet">Baby tæppe</h5>
                 <p class="undertekst">Strikkeopskrift - PDF</p>
             <div class="bund-udvalg">
                 <p class="pris">39KR</p>
-                <button class="kob-knap">Køb nu</button>
+                <button class="kob-knap">Læs mere</button>
             </div>
 
         </li>
         
-        <li>
-            <img class="hover" src="img/ting.png" alt="produktbillede">
+        <li class="hover" tabindex="0">
+            <img src="img/ting.png" alt="Gå til kits"">
 
 
            
@@ -194,13 +194,13 @@
                 <p class="undertekst">Strikkeopskrift - PDF</p>
             <div class="bund-udvalg">
                 <p class="pris">39kr</p>
-                <button class="kob-knap">Køb nu</button>
+                <button class="kob-knap">Læs mere</button>
             </div>
 
         </li>
         
-        <li>
-            <img class="hover" src="img/vest3.png" alt="produktbillede">
+        <li class="hover" tabindex="0">
+        <img src="img/vest3.png" alt="Gå til tilbehør"">
 
 
            
@@ -208,27 +208,27 @@
                 <p class="undertekst">Garnkit inkl. PDF opskrift</p>
             <div class="bund-udvalg">
                 <p class="pris">499kr</p>
-                <button class="kob-knap">Køb nu</button>
+                <button class="kob-knap">Læs mere</button>
             </div>
 
         </li>
-        <li class="desk hover">
+        <li class="hover desk " tabindex="0">
             <img src="img/vest.webp" alt="produktbillede">
                 <h5 class="produktet">Snevest</h5>
                 <p class="undertekst">Garnkit inkl. opskrift</p>
             <div class="bund-udvalg">
                 <p class="pris">299kr</p>
-                <button class="kob-knap">Køb nu</button>
+                <button class="kob-knap">Læs mere</button>
             </div>
         </li>
         
-        <li class="desk hover">
+        <li class="hover desk " tabindex="0">
             <img src="img/et-phone-home.png" alt="produktbillede">
                 <h5 class="produktet">Oktoberhette</h5>
                 <p class="undertekst">Garnkit inkl. PDF opskrift</p>
             <div class="bund-udvalg">
                 <p class="pris">160kr</p>
-                <button class="kob-knap">Køb nu</button>
+                <button class="kob-knap">Læs mere</button>
             </div>
         </li>
        
@@ -242,24 +242,24 @@
   
   <!-- Venstre kolonne -->
   <div class="footer-left">
-    <div class="nyhedsbrev">
-      <h3>BLIV EN DEL AF KLUBBEN!</h3>
+    <div class="nyhedsbrev" aria-labelledby="nyhedsbrev-header">
+      <h3 id="nyhedsbrev-header">BLIV EN DEL AF KLUBBEN!</h3>
       <p>Tilmeld dig vores nyhedsbrev og modtag eksklusive tilbud</p>
-      <form>
-        <input type="email" placeholder="Indtast din e-mail" required>
-        <button class="mail-knap" type="submit">
+      <form aria-label="Tilmelding til nyhedsbrev">
+        <input type="email" placeholder="Indtast din e-mail" required aria-required="true">
+        <button class="mail-knap" type="submit" aria-label="Tilmeld nyhedsbrev">
     <p>&#8594;</p>
     </button>
       </form>
     </div>
 
-    <div class="social">
+    <div class="social" aria-labelledby="social-header">
       <div class="ikoner">
-        <img src="img/fb.png" alt="Facebook">
-        <img src="img/insta.png" alt="Instagram">
-        <img src="img/tiktok.png" alt="Tiktok">
+        <img src="img/fb.png" alt="Facebook-side">
+        <img src="img/insta.png" alt="Instagram-side">
+        <img src="img/tiktok.png" alt="Tiktok-side">
       </div>
-      <p>Sociale Medier</p>
+      <p id="social-header">Sociale Medier</p>
     </div>
   </div>
 
@@ -272,12 +272,12 @@
       <p><strong>Besøg os</strong></p>
       <p>Låsbygade 42b</p>
       <p>6000 Kolding</p>
-      <p><img src="img/telefon.png" alt="">+4512345678</p>
-      <p><img src="img/mail.png" alt="">info@garnogcraft.dk</p>
+      <p><img src="img/telefon.png"><a href="tel:+4512345678" aria-label="Ring til Garn & craft"></a>+45 12 34 56 78</p>
+      <p><img src="img/mail.png"><a href="mailto:info@garnogcraft.dk" aria-label="Send mail til Garn og Craft"></a>info@garnogcraft.dk</p>
     </div>
 
-    <div class="Tider">
-      <h3>Åbningstider</h3>
+    <div class="Tider" aria-label="åbeningstider-header">
+      <h3 id="åbeningstider-header">Åbningstider</h3>
       <p>Man: 11.00–17.00</p>
       <p>Tirs: Lukket</p>
       <p>Ons: 11.00–17.00</p>
@@ -290,7 +290,7 @@
 </div>
 
 </footer>
-       <div class="bottum">
+       <div class="bottum" aria-label="Virksomhedsoplysninger">
         <p>CVR-nummer: 43420178</p>
         <p>Bankoplysninger: 7040 0002249612</p>
         <p>2025 Garn & Craft.</p>

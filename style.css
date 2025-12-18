@@ -22,8 +22,7 @@ body{
   --cta: #53443A;
   --white: white;
 }
-/* ------- Navigation ------- */
-.topnav {
+/* ------- Navigation ------- */.topnav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -85,6 +84,10 @@ body{
   align-items: center;
   justify-content: center;
   }
+.forside hr{
+  color: var(--box);
+  border-bottom: solid 4px var(--box);
+}
 
 #menu {
   position: absolute;
@@ -200,10 +203,6 @@ a{
   transition: 200ms ease-in;
 }
 
-.hero-knap:hover, .knap-om-os:hover {
- transform: scale(1.1) rotate(5deg);
-}
-
 .kategori-boks h2{
     background-color: var(--box);
     color: var(--white);
@@ -284,7 +283,7 @@ a{
     background-color: var(--cta);
     padding: .5em 2em;
     display: block;
-    border-radius: 40px;
+    border-radius: 30px;
     margin: 0 1em;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
@@ -408,7 +407,7 @@ a{
 
 /* ------- Månedens udvalgte ------- */
 h4{
-    color: var(--cta);
+    color: var(--box);
     font-family: "fatfrank", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -450,10 +449,9 @@ h4{
   font-family: "fatfrank", sans-serif;
   font-weight: 400;
   font-style: normal;
-  transition: 500ms ease in;
-}
-.kob-knap:hover{
-  transform: scale(1.1) rotate(5deg);
+  transition: 200ms ease in;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  border: none;
 }
 .bund-udvalg{
   margin-top: 2.4em;
@@ -479,7 +477,10 @@ h4{
   padding-left: 1rem;
   padding-right: 1rem;
 }
-
+.udvalg-container li{
+  border-radius: 30px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
 
 /* ------- Footer ------- */
 
@@ -620,7 +621,7 @@ footer {
   padding: 0px 1.5em;
 
   font-size: clamp(1.4rem, 4vw, 2em);
-  transition: 300ms ease;
+  transition: 200ms ease-in;
 }
 .link-text a:hover{
   transform: scale(1.1);
@@ -631,7 +632,7 @@ footer {
 .navimg img{
   width: clamp(3rem, 5vw, 2rem);
 }
-.navimg img:hover{
+.navimg img:hover, .kob-knap:hover, .knap-om-os:hover, .hero-knap:hover{
   transform: scale(1.1);
 }
   /* Herosektion */
@@ -670,7 +671,7 @@ footer {
     column-gap: 10px;
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-    transition: 500ms ease-in;
+    transition: 200ms ease-in;
 }
 .kategori-boks:hover{
   transform:scale(1.1);
