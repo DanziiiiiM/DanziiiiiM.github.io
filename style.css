@@ -217,15 +217,15 @@ a{
 
 /* Billeder */
 .kategori-boks:nth-child(1){
-    background-image: url(img/haeklet.lys.jpg);
+    background-image: url(img/garnreol.png);
     background-size: cover;
 }
 .kategori-boks:nth-child(2){
-    background-image: url(img/loeber.jpg);
+    background-image: url(img/helle.png);
     background-size: cover;
 }
 .kategori-boks:nth-child(3){
-    background-image: url(img/CRAFTCLUB.jpg);
+    background-image: url(img/æg.png);
     background-size: cover;
 }
 
@@ -346,7 +346,7 @@ a{
   width: 70vw;
   border-radius: 20px;
   overflow: hidden; 
-  background-image: url(img/haeklet.lys.jpg);
+  background-image: url(img/close-up-wool-texture-design.jpg);
   background-size: cover;
     
 }
@@ -361,7 +361,7 @@ a{
   width: 70vw;
   border-radius: 20px;
   overflow: hidden; 
-  background-image: url(img/haeklet.lys.jpg);
+  background-image: url(img/craft-billede.jpg);
   background-size: cover;
 
 }
@@ -387,10 +387,10 @@ a{
   align-items: center;
   background-size: cover;
   background-position: center;
-  width: 70vw;
+  width: 100vw;
   border-radius: 20px;
   overflow: hidden; 
-  background-image: url(img/haeklet.lys.jpg);
+  background-image: url(img/marbels.png);
   background-size: cover;
   height: 35vh;  
 } 
@@ -433,9 +433,8 @@ h4{
     display: block;
 }
 .udvalg-container li{
-  height: 520px;
+  height: 540px;
   background-color: var(--white);
-  border-radius: 30px 30px 0 0;
 
 }
 .udvalg-container h5{
@@ -694,21 +693,31 @@ footer {
 
 .scroll-controls {
   display: flex;
+  flex-direction: row;
+  align-items: center;
+
   justify-content: center;
   gap: 1rem;
-  margin: 1.5rem 0;
 }
 
 .scroll-btn {
-  width: 1.5em;
-  height: 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   border: none;
   font-size: 2rem;
   cursor: pointer;
 }
-.size{
-  height: 70vh;
+
+.size {
+
+  height: 90vh;
+  display: flex;
+  justify-content: center; /* vandret */
+  align-items: center;     /* lodret */
 }
 
 .rabat{
@@ -720,7 +729,9 @@ footer {
     gap: 40px;
     margin-top: 20px;
     margin: 4em;
-
+    width: 80%;
+    margin: auto ;
+    padding-bottom: 4em;
 }
 
 .udvalg-container img{
