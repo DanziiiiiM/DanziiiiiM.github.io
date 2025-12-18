@@ -44,10 +44,6 @@ html {
   z-index: 1000;
   border-radius: 8px;
 }
-.topnav a:hover {
-  background-color: var(--box);
-  color: var(--white);
-}
 .skip-link:focus {
   top: 1rem;
 }
