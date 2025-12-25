@@ -1012,6 +1012,7 @@ footer {
     max-width: 360px;
     margin: 0 auto;
     padding: 0 1rem 3rem;
+
   }
 
   .udvalg-container li {
@@ -1025,7 +1026,9 @@ footer {
   .udvalg-container h5 {
     font-size: 1.5rem;
   }
-
+.bund-udvalg{
+  padding-bottom: 1em;
+}
   .bund-udvalg p {
     font-size: 1.4rem;
   }
