@@ -906,47 +906,52 @@ footer {
     padding: 3rem 2rem;
   }
 }
- @media (max-width: 450px) {
-.menu-knap {
-  display: block;
-}
+@media (max-width: 450px) {
 
-.link-text {
-  display: none;
-}
+  .menu-knap {
+    display: block;
+  }
 
-.navimg img {
-  width: 2em;
-}
-.hero-banner {
-  flex-direction: column;
-}
+  .link-text {
+    display: none;
+  }
 
-.hero-boks {
-  width: 100%;
-  padding: 2rem 1.5rem;
-  font-size: 1.4rem;
-}
+  .navimg img {
+    width: 2em;
+  }
 
-.hero-banner img {
-  width: 100%;
-}
-.kategorier {
-  flex-direction: column;
-  gap: 2rem;
-  padding: 2rem 1rem;
-  
-}
+  /* HERO */
+  .hero-banner {
+    flex-direction: column;
+  }
 
-.kategori-boks {
-  width: 100%;
-  height: auto;
-  height: 20vh;
-}
+  .hero-boks {
+    width: 100%;
+    padding: 2rem 1.5rem;
+    font-size: 1.4rem;
+  }
 
-.kategori-boks h2 {
-  font-size: 2rem;
-}
+  .hero-banner img {
+    width: 100%;
+  }
+
+  /* KATEGORIER */
+  .kategorier {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 1rem;
+  }
+
+  .kategori-boks {
+    width: 100%;
+    height: 20vh;
+  }
+
+  .kategori-boks h2 {
+    font-size: 2rem;
+  }
+
+  /* BESKRIVELSE */
   .beskrivelse {
     padding: 2.5rem 1.5rem;
     text-align: center;
@@ -960,68 +965,78 @@ footer {
     margin-bottom: 1.2rem;
   }
 
-  /* Ikon */
-
-
-  /* Overskrift */
   .beskrivelse h2 {
     font-size: 1.4rem;
     margin-bottom: 2rem;
   }
 
-  /* Brødtekst */
   .beskrivelse p {
     font-size: 1.3rem;
     line-height: 1.65;
-    max-width: 30ch;     
+    max-width: 30ch;
     margin: 0 auto 1rem;
   }
 
-.scrollx h3{
-  font-size: 2rem;
-}
+  /* SCROLLX */
+  .scrollx h3 {
+    font-size: 2rem;
+  }
 
-.size{
-  height: 20vh;
-}
+  .size {
+    height: 20vh;
+  }
 
-.udvalg-container {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 2rem;
+  /* UDVALG */
+  .udvalg-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto;
+    padding: 0 1rem 3rem;
+  }
 
-  width: 100%;
-  max-width: 360px;   
-  margin: 0 auto;    
-  padding: 0 1rem 3rem;
-}
+  .udvalg-container li {
+    min-height: auto;
+  }
 
-.udvalg-container li {
-  min-height: auto;
-}
+  .udvalg-container li img {
+    height: 300px;
+  }
 
-.udvalg-container li img {
-  height: 300px;
-}
-.rabat h2 {
-  font-size: 2rem;
-}
+  .udvalg-container h5 {
+    font-size: 1.5rem;
+  }
 
-.rabat p {
-  font-size: 1.6rem;
-}
+  .bund-udvalg p {
+    font-size: 1.4rem;
+  }
 
-.udvalg-container h5 {
-  font-size: 1.5rem;
-}
+  /* RABAT */
+  .rabat h2 {
+    font-size: 2rem;
+  }
 
-.bund-udvalg p {
-  font-size: 1.4rem;
-}
-footer {
-  grid-template-columns: 1fr;
-  padding: 2rem 1.5rem;
-}
+  .rabat p {
+    font-size: 1.6rem;
+  }
+
+  /* FOOTER */
+  footer {
+    grid-template-columns: 1fr;
+    padding: 2rem 1.5rem;
+  }
+
+  .footer-info {
+    grid-template-columns: 1fr;
+  }
+
+  .social {
+    align-items: center;
+  }
+
+  /* NYHEDSBREV */
   .nyhedsbrev {
     position: relative;
     width: 100%;
@@ -1030,8 +1045,8 @@ footer {
   }
 
   .nyhedsbrev input {
-    width: 100%;
-    padding: 1em 3.5em 1em 1.2em; /* plads til pil */
+    width: 90%;
+    padding: 1em 3.5em 1em 1.2em;
     border-radius: 999px;
     border: none;
     background-color: #972a0f;
@@ -1044,27 +1059,18 @@ footer {
   }
 
   .nyhedsbrev button {
+    
     position: absolute;
     top: 50%;
     right: 0.6em;
     transform: translateY(-50%);
-
     width: 36px;
     height: 36px;
     border-radius: 50%;
     border: none;
-
     background: white;
     color: #972a0f;
     font-size: 1.2rem;
     cursor: pointer;
   }
-
-.footer-info {
-  grid-template-columns: 1fr;
-}
-
-.social {
-  align-items: center;
-}
 }
