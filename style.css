@@ -906,7 +906,7 @@ footer {
     padding: 3rem 2rem;
   }
 }
- @media (max-width: 375px) {
+ @media (max-width: 450px) {
 .menu-knap {
   display: block;
 }
