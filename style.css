@@ -594,8 +594,25 @@ footer {
   width: 100%;
 }
  
+.nyhedsbrev form {
+  position: relative;
+}
 
+.nyhedsbrev form:focus-within .mail-knap {
+  background-color: var(--cta);
+  color: white;
+}
+.mail-knap {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 0.6em;
+  transition: transform 0.2s ease;
+}
 
+.nyhedsbrev form:focus-within .arrow {
+  transform: translateX(3px);
+}
 
  @media(min-width: 769px){
   /* Navigation */
@@ -1045,7 +1062,7 @@ footer {
   }
 
   .nyhedsbrev input {
-    width: 90%;
+    width: 100%;
     padding: 1em 3.5em 1em 1.2em;
     border-radius: 999px;
     border: none;
@@ -1072,5 +1089,23 @@ footer {
     color: #972a0f;
     font-size: 1.2rem;
     cursor: pointer;
+  }
+}
+@media (max-width: 375px) {
+
+  .nyhedsbrev input {
+    padding: 0.9em 3.2em 0.9em 1.1em;
+    font-size: 0.95rem;
+  }
+
+  .mail-knap {
+    width: 30px;
+    height: 30px;
+    right: 6px;
+    padding-right: 5px;
+  }
+
+  .mail-knap .arrow {
+    font-size: 1.05rem;
   }
 }
