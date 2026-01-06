@@ -1175,7 +1175,9 @@ footer {
   cursor: pointer;
   
 }
-
+.kontakt img{
+  display: none;
+}
 }
 @media (max-width: 400px) {
 .nyhedsbrev input {
@@ -1213,6 +1215,8 @@ footer {
   cursor: pointer;
   
 }
+}
+
 @media (max-width: 390px) {
 .nyhedsbrev input {
   width: 90%;
@@ -1248,6 +1252,7 @@ footer {
   padding: 0;
   cursor: pointer;
   
+}
 }
 @media (max-width: 380px) {
 .nyhedsbrev input {
@@ -1285,6 +1290,8 @@ footer {
   cursor: pointer;
   
 }
+}
+
 @media (max-width: 375px) {
 
   .nyhedsbrev input {
@@ -1301,5 +1308,150 @@ footer {
 
   .mail-knap .arrow {
     font-size: 1.05rem;
+  }
+}
+
+@media (min-width: 1536px) and (max-width: 1919px) {
+    .nyhedsbrev input {
+    width: 61%;
+    padding: 1em 4em 1em 1.2em;
+    border-radius: 999px;
+    border: none;
+    background-color: #972a0f;
+    color: white;
+    font-size: 1rem;
+  }
+
+  .nyhedsbrev input::placeholder {
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  .nyhedsbrev button {
+    position: absolute;
+    transform: translateY(-50%);
+
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: none;
+
+    background: white;
+    color: #972a0f;
+    font-size: 1.2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+    cursor: pointer;
+    }
+    .nyhedsbrev input {
+      padding: 0.9em 3.2em 0.9em 1.1em;
+      font-size: 0.95rem;
+    }
+
+    .mail-knap {
+      width: 30px;
+      height: 30px;
+      right: 6px;
+      padding-right: 5px;
+    }
+
+    .mail-knap .arrow {
+      font-size: 1.05rem;
+    }
+  }
+@media (min-width: 3839px) {
+  .udvalg-container p{
+    font-size: 1.5em;
+  }
+   .udvalg-container h5{
+    font-size: 2.5em;
+  }
+  .link-text{
+    font-size: 1.5em;
+  }
+   .logo {
+    margin: 0 auto;
+    max-width: 300px;
+  }
+  .logo img{
+   width: clamp(6rem, 18vw, 10rem);
+    max-width: 100%;
+    }
+    .navimg img{
+  width: clamp(3rem, 5vw, 2rem);
+  
+}
+  h1{
+    font-size: 5em;
+  }
+  .kategorier h2 {
+    font-size: 5em;
+  }
+  .beskrivelse{
+    font-size: 2em;
+  }
+.beskrivelse-undersektion img {
+  height: 450px;
+  margin-bottom: 1rem;
+  object-fit: contain;
+
+}
+  .nyhedsbrev input {
+  width: 22%;
+  padding: 1em 4em 1em 1.2em;
+  border-radius: 999px;
+  border: none;
+  background-color: #972a0f;
+  color: white;
+  font-size: 1rem;
+}
+
+.nyhedsbrev input::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.nyhedsbrev button {
+  position: absolute;
+  transform: translateY(-50%);
+
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+
+  background: white;
+  color: #972a0f;
+  font-size: 1.2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+  cursor: pointer;
+  }
+  .nyhedsbrev input {
+    padding: 0.9em 3.2em 0.9em 1.1em;
+    font-size: 0.95rem;
+  }
+
+  .mail-knap {
+    width: 30px;
+    height: 30px;
+    right: 6px;
+    padding-right: 5px;
+  }
+
+  .mail-knap .arrow {
+    font-size: 1.05rem;
+  }
+  footer{
+    font-size: 1.5em;
+  }
+  .ikoner img{
+    width: 50px;
   }
 }
